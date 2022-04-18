@@ -1,14 +1,16 @@
 var playerName = window.prompt("What is your robot's name?");
-//Note the lack of quotation marks around playerName
-console.log(playerName);
-console.log("This logs a string, good for leaving yourself a meessage");
-//this will do math and log 20
-//what is this?
-console .log ("Our robot's name is " + playername);
+var playerHealth = 100;
+var playerAttack = 10;
 
-// this creates a function named "fight"
-function fight (){
-    window.alert("The fight has begun!");
-}
+//You can also log multiple values at once like this
+console.log(playerName, playerAttack, playerHealth);
 
-//fight();
+var enemyName = "Roborto";
+var enemyHealth = 50;
+var enemyAttack = 12;
+
+var fight = function(){
+    window.alert("Welcome to Robot Gladiators!");
+};
+
+fight();

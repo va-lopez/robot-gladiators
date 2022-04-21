@@ -1,3 +1,8 @@
+var randomNumber = function(min, max){
+    var value = Math.floor(Math.random() * (max-min + 1 ) + min);
+    return value;
+}
+
 //fight function
 var fight = function(enemy){
     //repeat and execute as long as the enemy-robot is alive
@@ -158,11 +163,6 @@ var shop = function(){
             break;
     }
 };
-
-var randomNumber = function(min, max){
-    var value = Math.floor(Math.random() * (max-min + 1 ) + min);
-    return value;
-}
 
 var playerInfo = {
     name: window.prompt("What is your robot's name?"),

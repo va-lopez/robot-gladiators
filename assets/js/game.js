@@ -30,6 +30,7 @@ var fightOrSkip = function (){
             return true;
         }
     }
+    return false;
 };
 
 //fight function
@@ -119,13 +120,14 @@ var startGame = function(){
     playerInfo.reset();
     
     for(var i=0; i< enemyInfo.length; i++){
-
+        console.log(playerInfo);
         if(playerInfo.health>0){
             window.alert("Welcome to Robot Gladiators! Round " + (i +1));
             
             var pickedEnemyObj = enemyInfo[i];
             pickedEnemyObj.health = randomNumber(40,60);
         
+            console.log(pickedEnemyObj);
             //call fight function with enemy-robot
             fight(pickedEnemyObj);
 
@@ -229,12 +231,12 @@ var shop = function(){
 var getPlayerName = function(){
     var name = "";
 
-while( name === "" || name === null){
-    name = prompt("What is your robot's name?");
-}
+    while( name === "" || name === null){
+        name = prompt("What is your robot's name?");
+    }
 
-console.log("Your robot's name is " + name);
-return name;
+    console.log("Your robot's name is " + name);
+    return name;
 };
 
 

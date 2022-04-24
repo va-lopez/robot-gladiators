@@ -241,7 +241,7 @@ var getPlayerName = function(){
 
 
 var playerInfo = {
-    name: getPlayerName(),
+    //name: getPlayerName(),
     health: 100,
     attack: 10,
     money: 10,
@@ -249,6 +249,7 @@ var playerInfo = {
         this.health = 100;
         this.money = 10;
         this.attack = 10;
+        this.name = getPlayerName();
     },//comma!
     refillHealth: function(){
         if(this.money >=7){
